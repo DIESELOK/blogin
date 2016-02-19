@@ -78,44 +78,41 @@ a:hover {
 /* line 1, ../sass/layout/_header.scss */
 #navbar {
   overflow: hidden;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 9999;
+  margin-bottom: 80px;
   min-height: 130px;
   background-color: #292929;
   box-shadow: inset 0 -6px 0 #1e1e1e;
 }
-/* line 10, ../sass/layout/_header.scss */
+/* line 7, ../sass/layout/_header.scss */
 #navbar h1 {
   float: left;
   margin-top: 32px;
 }
-/* line 13, ../sass/layout/_header.scss */
+/* line 10, ../sass/layout/_header.scss */
 #navbar h1 a {
   color: white;
   font-family: Eurofurenceregular;
   font-size: 40px;
   transition: 0.5s;
 }
-/* line 18, ../sass/layout/_header.scss */
+/* line 15, ../sass/layout/_header.scss */
 #navbar h1 a:hover {
   color: #516fad;
 }
-/* line 23, ../sass/layout/_header.scss */
+/* line 20, ../sass/layout/_header.scss */
 #navbar nav {
   float: right;
   max-width: 150px;
   margin-top: 42px;
 }
 @media screen and (min-width: 670px) {
-  /* line 23, ../sass/layout/_header.scss */
+  /* line 20, ../sass/layout/_header.scss */
   #navbar nav {
     max-width: 535px;
     margin-top: 0;
   }
 }
-/* line 32, ../sass/layout/_header.scss */
+/* line 29, ../sass/layout/_header.scss */
 #navbar .iconMenu {
   clear: both;
   float: right;
@@ -123,12 +120,12 @@ a:hover {
   cursor: pointer;
 }
 @media screen and (min-width: 670px) {
-  /* line 32, ../sass/layout/_header.scss */
+  /* line 29, ../sass/layout/_header.scss */
   #navbar .iconMenu {
     display: none;
   }
 }
-/* line 42, ../sass/layout/_header.scss */
+/* line 39, ../sass/layout/_header.scss */
 #navbar .itemsMenu li {
   float: left;
   width: 100%;
@@ -137,7 +134,7 @@ a:hover {
   text-align: right;
 }
 @media screen and (min-width: 670px) {
-  /* line 42, ../sass/layout/_header.scss */
+  /* line 39, ../sass/layout/_header.scss */
   #navbar .itemsMenu li {
     display: inline-block;
     width: 130px;
@@ -145,13 +142,13 @@ a:hover {
     box-shadow: -1px 0 0 #1d1d1d;
     text-align: center;
   }
-  /* line 54, ../sass/layout/_header.scss */
+  /* line 51, ../sass/layout/_header.scss */
   #navbar .itemsMenu li:last-child {
     margin-right: 0;
     box-shadow: -1px 0 0 #1d1d1d, inset -1px 0 0 #1d1d1d;
   }
 }
-/* line 59, ../sass/layout/_header.scss */
+/* line 56, ../sass/layout/_header.scss */
 #navbar .itemsMenu li a {
   display: inline-block;
   text-shadow: 0 1px 0 #1e1e1e;
@@ -160,45 +157,131 @@ a:hover {
   font-weight: 700;
 }
 @media screen and (min-width: 670px) {
-  /* line 59, ../sass/layout/_header.scss */
+  /* line 56, ../sass/layout/_header.scss */
   #navbar .itemsMenu li a {
     width: 100%;
     padding-bottom: 51px;
     margin-top: 51px;
   }
 }
-/* line 70, ../sass/layout/_header.scss */
+/* line 67, ../sass/layout/_header.scss */
 #navbar .itemsMenu li a:hover {
   transition: 0.5s;
   border-bottom: 3px solid #58c93a;
   color: #58c93a;
 }
 
-/* line 79, ../sass/layout/_header.scss */
+/* line 76, ../sass/layout/_header.scss */
 .showitems {
   display: block !important;
   transition: 1s;
 }
 
-/* line 84, ../sass/layout/_header.scss */
+/* line 81, ../sass/layout/_header.scss */
 .iconMenu {
   display: block;
 }
 
-/* line 88, ../sass/layout/_header.scss */
+/* line 85, ../sass/layout/_header.scss */
 .itemsMenu {
   display: none;
 }
 @media screen and (min-width: 670px) {
-  /* line 88, ../sass/layout/_header.scss */
+  /* line 85, ../sass/layout/_header.scss */
   .itemsMenu {
     display: block;
   }
 }
 
-/* line 95, ../sass/layout/_header.scss */
+/* line 92, ../sass/layout/_header.scss */
 .itemsMenu li {
   display: block;
+}
+
+/* line 1, ../sass/site-parts/_aside.scss */
+.right-aside {
+  margin-bottom: 40px;
+}
+/* line 3, ../sass/site-parts/_aside.scss */
+.right-aside h2 {
+  margin-bottom: 15px;
+  border-left: 1px solid #58c93a;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  box-shadow: inset 3px 0 0 #58c93a;
+  text-align: left;
+  color: #6c6969;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 15, ../sass/site-parts/_aside.scss */
+.right-aside p {
+  margin-bottom: 25px;
+  padding: 0 15px;
+  color: #737373;
+  font-size: 16px;
+  line-height: 20px;
+}
+/* line 22, ../sass/site-parts/_aside.scss */
+.right-aside input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid #e1e0e0;
+  font-size: 16px;
+  color: #6c6969;
+  background-color: white;
+}
+/* line 31, ../sass/site-parts/_aside.scss */
+.right-aside input::-moz-placeholder {
+  text-overflow: ellipsis;
+  color: #b9b9b9;
+  font-size: 12px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+/* line 32, ../sass/site-parts/_aside.scss */
+.right-aside input:-moz-placeholder {
+  text-overflow: ellipsis;
+  color: #b9b9b9;
+  font-size: 12px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+/* line 33, ../sass/site-parts/_aside.scss */
+.right-aside input:-ms-input-placeholder {
+  text-overflow: ellipsis;
+  color: #b9b9b9;
+  font-size: 12px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+/* line 35, ../sass/site-parts/_aside.scss */
+.right-aside .main-descript {
+  margin-bottom: 50px;
+}
+/* line 38, ../sass/site-parts/_aside.scss */
+.right-aside .search {
+  margin-bottom: 75px;
+}
+/* line 42, ../sass/site-parts/_aside.scss */
+.right-aside .tuned-mail form {
+  position: relative;
+}
+/* line 44, ../sass/site-parts/_aside.scss */
+.right-aside .tuned-mail form button {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  bottom: 0px;
+  border: none;
+  background: transparent;
+}
+/* line 52, ../sass/site-parts/_aside.scss */
+.right-aside .tuned-mail form .fa {
+  font-size: 30px;
+  color: #e1e0e0;
 }
 
 /* line 1, ../sass/layout/_footer.scss */
