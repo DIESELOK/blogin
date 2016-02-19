@@ -15,7 +15,7 @@
 <body>
 
 <header id="navbar" class="navbar">
-    <div class="container">
+    <div id="content-wrap" class="container">
         <h1><a href="#navbar">Blogin.</a></h1>
         <nav>
             <ul class="nav">
@@ -31,7 +31,7 @@
     </div>
 </header>
 
-<div class="container">
+<div class="container wrap">
     <aside class="right-aside">
             <section class="main-descript">
                 <h2>About Blogin.</h2>
@@ -82,6 +82,17 @@
             </ul>
         </div>
     </section>
+
+<footer>
+    <h2><a href="#" class="logo">Blogin<span>.</span></a></h2>
+    <p>© 2014 Blogin.com  -  All Rights Reserved  -  Find more free Templates at <span>Pixelhint.com<span></span></p>
+    <ul class="social">
+        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+        <li><a href="#"><span class="fa fa-behance"></span></a></li>
+        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+    </ul>
+</footer>
 
 
 
