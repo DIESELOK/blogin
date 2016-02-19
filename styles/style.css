@@ -202,7 +202,14 @@ a:hover {
 .right-aside {
   margin-bottom: 40px;
 }
-/* line 3, ../sass/site-parts/_aside.scss */
+@media screen and (min-width: 935px) {
+  /* line 1, ../sass/site-parts/_aside.scss */
+  .right-aside {
+    float: right;
+    max-width: 280px;
+  }
+}
+/* line 7, ../sass/site-parts/_aside.scss */
 .right-aside h2 {
   margin-bottom: 15px;
   border-left: 1px solid #58c93a;
@@ -215,7 +222,7 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 15, ../sass/site-parts/_aside.scss */
+/* line 19, ../sass/site-parts/_aside.scss */
 .right-aside p {
   margin-bottom: 25px;
   padding: 0 15px;
@@ -223,7 +230,7 @@ a:hover {
   font-size: 16px;
   line-height: 20px;
 }
-/* line 22, ../sass/site-parts/_aside.scss */
+/* line 26, ../sass/site-parts/_aside.scss */
 .right-aside input {
   width: 100%;
   height: 50px;
@@ -233,7 +240,7 @@ a:hover {
   color: #6c6969;
   background-color: white;
 }
-/* line 31, ../sass/site-parts/_aside.scss */
+/* line 35, ../sass/site-parts/_aside.scss */
 .right-aside input::-moz-placeholder {
   text-overflow: ellipsis;
   color: #b9b9b9;
@@ -241,7 +248,7 @@ a:hover {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
-/* line 32, ../sass/site-parts/_aside.scss */
+/* line 36, ../sass/site-parts/_aside.scss */
 .right-aside input:-moz-placeholder {
   text-overflow: ellipsis;
   color: #b9b9b9;
@@ -249,7 +256,7 @@ a:hover {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
-/* line 33, ../sass/site-parts/_aside.scss */
+/* line 37, ../sass/site-parts/_aside.scss */
 .right-aside input:-ms-input-placeholder {
   text-overflow: ellipsis;
   color: #b9b9b9;
@@ -257,19 +264,19 @@ a:hover {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
-/* line 35, ../sass/site-parts/_aside.scss */
+/* line 39, ../sass/site-parts/_aside.scss */
 .right-aside .main-descript {
   margin-bottom: 50px;
 }
-/* line 38, ../sass/site-parts/_aside.scss */
+/* line 42, ../sass/site-parts/_aside.scss */
 .right-aside .search {
   margin-bottom: 75px;
 }
-/* line 42, ../sass/site-parts/_aside.scss */
+/* line 46, ../sass/site-parts/_aside.scss */
 .right-aside .tuned-mail form {
   position: relative;
 }
-/* line 44, ../sass/site-parts/_aside.scss */
+/* line 48, ../sass/site-parts/_aside.scss */
 .right-aside .tuned-mail form button {
   position: absolute;
   right: 0;
@@ -278,10 +285,70 @@ a:hover {
   border: none;
   background: transparent;
 }
-/* line 52, ../sass/site-parts/_aside.scss */
+/* line 56, ../sass/site-parts/_aside.scss */
 .right-aside .tuned-mail form .fa {
   font-size: 30px;
   color: #e1e0e0;
+}
+
+/* line 2, ../sass/site-parts/_content.scss */
+.content {
+  max-width: 620px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 935px) {
+  /* line 2, ../sass/site-parts/_content.scss */
+  .content {
+    float: left;
+    max-width: 620px;
+  }
+}
+/* line 10, ../sass/site-parts/_content.scss */
+.content h2 {
+  margin: 15px auto 50px;
+  padding: 0 15px;
+  color: #4f4e4e;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+/* line 19, ../sass/site-parts/_content.scss */
+.content p {
+  margin: 25px 0;
+  padding: 0 15px;
+  color: #606060;
+  font-size: 16px;
+  line-height: 20px;
+}
+/* line 26, ../sass/site-parts/_content.scss */
+.content a {
+  display: inline-block;
+  width: 186px;
+  margin-bottom: 75px;
+  padding: 10px 20px;
+  border: 2px solid #c2c2c2;
+  border-radius: 25px;
+  text-align: center;
+  color: #c2c1c1;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+/* line 38, ../sass/site-parts/_content.scss */
+.content a:hover {
+  color: #4f4e4e;
+  border: 2px solid #4f4e4e;
+  background: #c2c1c1;
+}
+
+/* line 1, ../sass/site-parts/_navigation.scss */
+.navigation {
+  overflow: hidden;
+}
+/* line 3, ../sass/site-parts/_navigation.scss */
+.navigation .container {
+  border-top: 1px solid #e1e0e0;
 }
 
 /* line 1, ../sass/layout/_footer.scss */
@@ -326,7 +393,7 @@ footer .container p a:hover {
   box-sizing: border-box;
 }
 
-/* line 17, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .container {
   max-width: 1010px;
   margin-left: auto;
@@ -341,7 +408,7 @@ footer .container p a:hover {
   clear: both;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 img {
   max-width: 100%;
 }

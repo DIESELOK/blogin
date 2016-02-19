@@ -11,6 +11,8 @@
 @import "reset";
 @import "layout/header";
 @import "site-parts/aside";
+@import "site-parts/content";
+@import "site-parts/navigation";
 @import "layout/footer";
 
 @include border-box-sizing();
